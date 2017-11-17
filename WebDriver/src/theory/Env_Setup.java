@@ -166,6 +166,13 @@ GIT > Download GIT and install > Add to system variable and Jenkins GIT (C:\Prog
 Create New Job
 Goto New Item > Enter a name > select Maven project > ok > 
 Project Confg > Enter Git Repository url, goals (clean install), POM (Framework\pom.xml)
+
+Post build action > Publish HTML Reports > Index page(s) - Framework\Report\extent.html
+
+Setting to get extent report in good format (install HTML report plugin)
+Manage Jenkins > Script Console
+System.setProperty("hudson.model.DirectoryBrowserSupport.CSP","")
+Run twice until you see result:
   
 */
 
