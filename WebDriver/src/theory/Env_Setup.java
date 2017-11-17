@@ -172,6 +172,8 @@ Post build action > Publish HTML Reports > Index page(s) - Framework\Report\exte
 Setting to get extent report in good format (install HTML report plugin)
 Manage Jenkins > Script Console
 System.setProperty("hudson.model.DirectoryBrowserSupport.CSP","")
+System.setProperty("hudson.model.DirectoryBrowserSupport.CSP", 
+"sandbox allow-scripts; default-src 'self'; script-src * 'unsafe-eval'; img-src *; style-src * 'unsafe-inline'; font-src *");
 Run twice until you see result:
 
 Email Setting
