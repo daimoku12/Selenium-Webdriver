@@ -176,9 +176,10 @@ Run twice until you see result:
 
 Email Setting
 
-Manage Jenkins> Configure System > Extended Email Notification
+Manage Jenkins> Configure System > Email Notification
 SMTP server - smtp.gmail.com
 Use SMTP Authentication (check)
+USE SSL check
 SMTP port - 465 (for gmail)
 Reply to address - noreply@gmail.com
   
