@@ -160,11 +160,12 @@ available - install GitHub, Maven, TestNG Report and Cucumber plugins
 Manage Jenkins
 Global tool configuration
 JDK > Add JDK > uncheck automatic installation and provide JDK path set as env variable
-MAVEN > Add MAVEN (same steps as JDK) (C:\Users\Kannu\Downloads\apache-maven-3.5.2\bin)
-GIT > Install GIT > Add to system variable and Jenkins GIT (C:\Program Files\Git\bin\git.exe)
+MAVEN > download Maven and extract > Add MAVEN (same steps as JDK) (C:\Users\Kannu\Downloads\apache-maven-3.5.2\bin)
+GIT > Download GIT and install > Add to system variable and Jenkins GIT (C:\Program Files\Git\bin\git.exe)
 
 Create New Job
 Goto New Item > Enter a name > select Maven project > ok > 
+Project Confg > Enter Git Repository url, goals (clean install), POM (Framework\pom.xml)
   
 */
 
