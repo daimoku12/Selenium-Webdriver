@@ -165,7 +165,7 @@ GIT > Download GIT and install > Add to system variable and Jenkins GIT (C:\Prog
 
 Create New Job
 Goto New Item > Enter a name > select Maven project > ok > 
-Project Confg > Enter Git Repository url, goals (clean install), POM (Framework\pom.xml)
+Project Confg > Enter Git Repository url, goals (clean install), POM (Framework\pom.xml),  
 
 Post build action > Publish HTML Reports > Index page(s) - Framework\Report\extent.html
 
@@ -173,6 +173,14 @@ Setting to get extent report in good format (install HTML report plugin)
 Manage Jenkins > Script Console
 System.setProperty("hudson.model.DirectoryBrowserSupport.CSP","")
 Run twice until you see result:
+
+Email Setting
+
+Manage Jenkins> Configure System > Extended Email Notification
+SMTP server - smtp.gmail.com
+Use SMTP Authentication (check)
+SMTP port - 465 (for gmail)
+Reply to address - noreply@gmail.com
   
 */
 
