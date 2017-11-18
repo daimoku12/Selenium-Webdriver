@@ -32,6 +32,8 @@ public class Jenkins {
 	Project Confg > Enter Git Repository url, goals (clean install), POM (Framework\pom.xml),  
 
 	Post build action > Publish HTML Reports > Index page(s) - Framework\Report\extent.html
+	
+	Cucumber test result report - CucumberBDD\target\json-report\cucumber.json
 
 	Setting to get extent report in good format (install HTML report plugin)
 	Manage Jenkins > Script Console
