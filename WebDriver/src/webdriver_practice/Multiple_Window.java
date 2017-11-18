@@ -48,3 +48,20 @@ public class Multiple_Window {
 		driver.switchTo().window(parent);
 	}
 }
+
+/*driver.get("https://www.naukri.com");
+Set<String> wins = driver.getWindowHandles();
+
+for (String s : wins)
+{
+
+ driver.switchTo().window(s);
+ if (driver.getCurrentUrl().equalsIgnoreCase("https://naukri.com/"))
+  {
+  }
+
+ else
+  {
+   driver.close();
+  }
+} */

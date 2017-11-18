@@ -26,6 +26,8 @@ public class Popup {
 		Alert popUp = driver.switchTo().alert();
 		popUp.accept();
 		
+		//popUp.sendKeys("");
+		
 /*		driver.switchTo().alert().accept();
 		driver.switchTo().alert().dismiss();*/
 	
