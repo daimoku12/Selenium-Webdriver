@@ -32,6 +32,7 @@ public class Jenkins {
 	Project Confg > Enter Git Repository url, goals (clean install), POM (Framework\pom.xml),  
 
 	Post build action > Publish HTML Reports > Index page(s) - Framework\Report\extent.html
+	CucumberBDD\extent-report\extent-report.html (for Cucumber project)
 	
 	Cucumber test result report - CucumberBDD\target\json-report\cucumber.json
 
