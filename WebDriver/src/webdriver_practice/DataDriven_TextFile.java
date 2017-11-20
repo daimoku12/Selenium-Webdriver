@@ -1,12 +1,9 @@
 package webdriver_practice;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class DataDriven_TextFile {

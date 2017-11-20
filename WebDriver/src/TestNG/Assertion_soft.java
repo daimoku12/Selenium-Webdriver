@@ -2,7 +2,7 @@ package TestNG;
 
 //Soft Assertion - If Assertion fails, execution will not stop but test will fail
 
-import org.testng.Assert;
+
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 

@@ -1,12 +1,10 @@
 package webdriver_practice;
 
 import java.util.List;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.internal.FindsByXPath;
-import org.openqa.selenium.remote.RemoteWebDriver;
+
 
 public class PushNotification {
 		
