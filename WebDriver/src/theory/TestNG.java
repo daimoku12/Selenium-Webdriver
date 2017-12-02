@@ -75,6 +75,17 @@ If at least one failure occurred in your dependencies, you will not be invoked a
 This is useful when you just want to make sure that your test methods are run in a certain order but their success 
 doesn't really depend on the success of others. A soft dependency is obtained by adding "alwaysRun=true" in your @Test annotation.
 
+Important
+
+java org.testng.TestNG this class has a main method which is the starting point of TestNG.  
+TestNG run is triggered by calling the main method in TestNG.java class 
+
+file: https://github.com/cbeust/testng/blob/master/src/main/java/org/testng/TestNG.java
+
+SO when you do right click >> Menu >> Run As >> TestNG suite. Eclipse actually calls the main method of this class. 
+Also, check how the args parameter in the main method are used. This will give you an idea of what parameters you 
+can pass to command line while running your tests in TestNG
+
 */
 
 public class TestNG {
