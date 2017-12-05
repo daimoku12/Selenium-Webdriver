@@ -26,7 +26,6 @@ public class ActionsClass_Keyboard {
 	act.sendKeys(Keys.CONTROL).sendKeys("v").build().perform();
 	Thread.sleep(5000);
 		
-		
 	}
 
 }

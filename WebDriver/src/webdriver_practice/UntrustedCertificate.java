@@ -23,5 +23,8 @@ driver.get("url");*/
 
 //https://badssl.com/
 
+/*for IE
+driver.Navigate().GoToUrl("javascript:document.getElementById('overridelink').click()");*/
+
  }
 }
