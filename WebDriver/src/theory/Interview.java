@@ -8,7 +8,8 @@ public class Interview {
 	
 	Bring different skills to playing field
 	
-		
+	Shift left
+	Silo b/w tester and developer	
 	
 */	
 	

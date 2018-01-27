@@ -23,13 +23,17 @@ public class AJAX_Google {
 
 	//Try xpath: //ul[@class='sbsb_b']/li/descendant::div[@class='sbqs_c']
 	  
-	String str =  driver.findElementByXPath(".//*[@id='sbtc']/div[2]/div[2]/div[1]/div/ul/li[1]/parent::*").getText();
+	//String str =  driver.findElementByXPath(".//*[@id='sbtc']/div[2]/div[2]/div[1]/div/ul/li[1]/parent::*").getText();
+	
+	String str =  driver.findElementByXPath("//ul[@class='sbsb_b']").getText();
+	
+	
 	System.out.println(str);
 	
 	String A[] = str.split("\n");
 	for(int i=0;i<A.length;i++){
 		
-		if (A[i].contains("Manufacturer in San Francisco")){
+		if (A[i].contains("hello google")){
 			driver.findElementById("lst-ib").clear();
 			driver.findElementById("lst-ib").sendKeys(A[i]);
 			Thread.sleep(3000);		
