@@ -1,6 +1,10 @@
 package inhetitance;
 
 public class ClassC extends ClassB {
+	
+	ClassC(){
+		super();
+	}
 
 public static void main(String[] args) {
 

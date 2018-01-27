@@ -5,6 +5,10 @@ public class ClassB extends ClassA {
 int a= 100; 
 int b= 200;
 
+/*ClassB(){
+	System.out.println("ClassB");
+}*/
+
 public void add1(){ //try the output by changing this method name to 'add'
 
 //Method name 'add' is an example of Method Overriding ('add' exists in SuperClass (A) and SubClass (B))	

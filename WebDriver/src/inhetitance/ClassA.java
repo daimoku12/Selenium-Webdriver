@@ -13,6 +13,10 @@ public class ClassA {
 
 int a=10;
 int b=20;
+
+ClassA(){
+	System.out.println("ClassA");
+}
 public void add(){
 System.out.println(a+b);	
 }
