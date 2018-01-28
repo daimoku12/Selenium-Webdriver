@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16081" started-at="2018-01-27T22:56:18Z" finished-at="2018-01-27T22:56:34Z">
+  <suite name="Default suite" duration-ms="9374" started-at="2018-01-28T16:44:09Z" finished-at="2018-01-28T16:44:19Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16081" started-at="2018-01-27T22:56:18Z" finished-at="2018-01-27T22:56:34Z">
-      <class name="webdriver_practice.AJAX_Google">
-        <test-method status="PASS" signature="tc001()[pri:0, instance:webdriver_practice.AJAX_Google@4667ae56]" name="tc001" duration-ms="15999" started-at="2018-01-27T17:56:18Z" finished-at="2018-01-27T17:56:34Z">
+    <test name="Default test" duration-ms="9374" started-at="2018-01-28T16:44:09Z" finished-at="2018-01-28T16:44:19Z">
+      <class name="webdriver_practice.practice">
+        <test-method status="PASS" signature="pract()[pri:0, instance:webdriver_practice.practice@f6c48ac]" name="pract" duration-ms="9343" started-at="2018-01-28T11:44:09Z" finished-at="2018-01-28T11:44:19Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc001 -->
-      </class> <!-- webdriver_practice.AJAX_Google -->
+        </test-method> <!-- pract -->
+      </class> <!-- webdriver_practice.practice -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

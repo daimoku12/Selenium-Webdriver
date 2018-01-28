@@ -19,6 +19,8 @@ public class ActionsClass_Mouse {
 	//act.contextClick();  //Right Click
 	//act.dragAndDrop(source, target);
 	
+	//perform - mouse hover only
+	
 	act.moveToElement(driver.findElementByXPath("//span[text()='Video Courses']")).perform();
 	Thread.sleep(2000);
 	driver.findElementByXPath("//a[@href='http://thetestingworld.com/product-category/databases/']").click();

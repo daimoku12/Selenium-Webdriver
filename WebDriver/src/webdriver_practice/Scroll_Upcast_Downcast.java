@@ -21,7 +21,7 @@ public class Scroll_Upcast_Downcast {
 		//JavascriptExecutor je = (JavascriptExecutor) driver;
 		JavascriptExecutor je = driver;  // version 3 onwards, will work
 		
-		je.executeScript("scroll(0,400)");    
+		je.executeScript("scroll(0,400);");    
 	}
 }
 

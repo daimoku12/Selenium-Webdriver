@@ -42,11 +42,27 @@ public class practice {
 		Select day = new Select (date);
 	    day.selectByVisibleText("21");*/
 		
-		driver.get("https://www.visier.com/careers/test-development-manager-data-management/");
+/*		driver.get("https://www.visier.com/careers/test-development-manager-data-management/");
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("scroll(0,800)");
 		
-		driver.findElement(By.xpath("//a[@href='https://www.visier.com/clarity/']")).click();
+		driver.findElement(By.xpath("//a[@href='https://www.visier.com/clarity/']")).click();*/
 		
+		driver.get("http://www.gooogle.com");
+		driver.findElement(By.id("lst-ib")).sendKeys("hello world");
+
+		String str = driver.findElement(By.xpath("//ul[@class='sbsb_b' and @role='listbox']")).getText();
+		System.out.println(str);
+		String[] A = str.split("\n");
+		
+        for (int i=0; i < A.length; i++){
+        	if (A[i].equalsIgnoreCase("hello world french")){
+        		driver.findElement(By.id("lst-ib")).clear();
+        		driver.findElement(By.id("lst-ib")).sendKeys(A[i]);
+        		break;
+        	}
+        }
+		
+		driver.quit();
 	}
 }
