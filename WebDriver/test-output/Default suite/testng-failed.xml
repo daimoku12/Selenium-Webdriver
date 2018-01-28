@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="TestNG.Assertion_soft">
+      <class name="webdriver_practice.practice">
         <methods>
-          <include name="tcase1"/>
+          <include name="pract"/>
         </methods>
-      </class> <!-- TestNG.Assertion_soft -->
+      </class> <!-- webdriver_practice.practice -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

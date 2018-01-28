@@ -44,7 +44,7 @@ public class WebTable {
 	
     for (int i =2;i<=rows.size();i++){
 		for (int j=1; j<=cc.size();j++){
-			System.out.print(driver.findElementByXPath(".//*[@id='customers']/tbody/tr["+i+"]/td["+j+"]").getText());
+			System.out.print(driver.findElementByXPath(".//*[@id='customers']/tbody//tr["+i+"]//td["+j+"]").getText());
 		      }
 	  System.out.println();
 	  }	

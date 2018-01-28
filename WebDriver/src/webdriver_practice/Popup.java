@@ -13,9 +13,7 @@ public class Popup {
 		ChromeDriver driver = new ChromeDriver();
 		driver.navigate().to("https://mail.rediff.com/cgi-bin/login.cgi");
 		Reporter.log("website opened");
-		//int size = driver.findElementsByTagName("iframe").size();
-		//System.out.println(size);		
-				
+						
 		WebElement e = driver.findElementByXPath("//input[@name='proceed']");
 		e.click();
 		
