@@ -19,8 +19,7 @@ public class Practice {
 		XSSFSheet sh = wb.getSheet("sheet1");
 		XSSFRow row = sh.getRow(0);
 		return sh.getRow(rowNum).getCell(cellNum).getStringCellValue();
-		
-	}
+		}
 	
 	public static void main(String[] args) throws Exception {
 		
@@ -32,7 +31,7 @@ public class Practice {
 		driver.manage().window().maximize();
 		driver.get("http://www.facebook.com");
 		driver.findElementById("email").sendKeys(initialise(driver, "sheet1", 0, 0));
+		driver.findElementById("pass").sendKeys(initialise(driver, "sheet1", 0, 1));
 		
 	}
-
 }

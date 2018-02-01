@@ -24,10 +24,10 @@ public class practice {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
-/*		driver.get("https://www.facebook.com");
-		
+			
 		//Dropdown using for loop............................................................
 		
+		driver.get("https://www.facebook.com");
 		List <WebElement> month = driver.findElements(By.xpath("//select[@id='month']/option"));
 		
 		for (WebElement m : month)
@@ -43,19 +43,19 @@ public class practice {
 		
 	    WebElement date = driver.findElement(By.xpath(".//*[@id='day']"));
 		Select day = new Select (date);
-	    day.selectByVisibleText("21");*/
+	    day.selectByVisibleText("21");
 		
 		//JSE Scroll...........................................................................
 		
-/*		driver.get("https://www.visier.com/careers/test-development-manager-data-management/");
+		driver.get("https://www.visier.com/careers/test-development-manager-data-management/");
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("scroll(0,800)");
 		
-		driver.findElement(By.xpath("//a[@href='https://www.visier.com/clarity/']")).click();*/
+		driver.findElement(By.xpath("//a[@href='https://www.visier.com/clarity/']")).click();
 		
 		//AJAX, UL, Actions Keyboard - Google...................................................
 		
-/*		driver.get("http://www.gooogle.com");
+		driver.get("http://www.gooogle.com");
 		driver.findElement(By.id("lst-ib")).sendKeys("hello world");
 
 		String str = driver.findElement(By.xpath("//ul[@class='sbsb_b' and @role='listbox']")).getText();
@@ -72,18 +72,18 @@ public class practice {
         		//driver.findElement(By.xpath("//input[@value='Google Search']")).click();
         		break;
         	}
-        }*/
+        }
 		
 		//Frames.................................................................................
 		
-/*		driver.navigate().to("http://seleniumhq.github.io/selenium/docs/api/java/index.html");
+		driver.navigate().to("http://seleniumhq.github.io/selenium/docs/api/java/index.html");
 		driver.switchTo().frame("classFrame");
 		driver.findElement(By.xpath("//a[@href='com/thoughtworks/selenium/condition/package-summary.html']")).click();
-		driver.switchTo().defaultContent();*/
+		driver.switchTo().defaultContent();
 		
         //Search for Frame Index + Scroll .........................................................
 		
-/*		driver.navigate().to("http://seleniumhq.github.io/selenium/docs/api/java/index.html");
+		driver.navigate().to("http://seleniumhq.github.io/selenium/docs/api/java/index.html");
 		
 		int totalFrames = driver.findElements(By.tagName("frame")).size();
 		System.out.println(totalFrames);
@@ -97,31 +97,31 @@ public class practice {
 		
 		driver.switchTo().frame(0);
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
-		jse.executeScript("scroll(0,50);");*/
+		jse.executeScript("scroll(0,50);");
 		
 		//Multiple windows using Set only............................................................
 		
-/*		driver.get("http://seleniumpractise.blogspot.in/2017/07/multiple-window-examples.html");
+		driver.get("http://seleniumpractise.blogspot.in/2017/07/multiple-window-examples.html");
 		
-		String parent = driver.getWindowHandle();
+		String parent1 = driver.getWindowHandle();
 		
 		driver.findElement(By.xpath("//a[@href='http://www.google.com']")).click();
-		driver.switchTo().window(parent);
+		driver.switchTo().window(parent1);
 		driver.findElement(By.xpath("//a[@href='http://www.facebook.com']")).click();
 		
-		Set <String> allWindows = driver.getWindowHandles();
+		Set <String> allWindows1 = driver.getWindowHandles();
 		
-		for (String child : allWindows){
+		for (String child : allWindows1){
 			
-			if (!child.equalsIgnoreCase(parent)){
+			if (!child.equalsIgnoreCase(parent1)){
 				driver.switchTo().window(child);
 				driver.close();
 			}
-		}*/
+		}
 		
 		//Multiple windows (convert Set into ArrayList).................................................
 		
-/*		driver.get("http://seleniumpractise.blogspot.in/2017/07/multiple-window-examples.html");
+		driver.get("http://seleniumpractise.blogspot.in/2017/07/multiple-window-examples.html");
 		
 		String parent = driver.getWindowHandle();
 		
@@ -143,11 +143,11 @@ public class practice {
 		driver.switchTo().window(child.get(2));
 		driver.close();
 		driver.switchTo().window(parent);
-		driver.close();*/
+		driver.close();
 		
 		//WebTable.....................................................................................
 		
-/*		driver.navigate().to("https://www.w3schools.com/html/html_tables.asp");
+		driver.navigate().to("https://www.w3schools.com/html/html_tables.asp");
 
 		WebElement table = driver.findElement(By.xpath("//*[@id='customers']"));
         List<WebElement> rows = table.findElements(By.tagName("tr"));
@@ -161,18 +161,18 @@ public class practice {
 			}
 
 			System.out.println();
-		}*/
+		}
 		
 		//WebTable using XPath.........................................................................
 		
-/*		driver.get("https://www.w3schools.com/html/html_tables.asp");
+		driver.get("https://www.w3schools.com/html/html_tables.asp");
 		
 		for (int i=2; 1<=7; i++){
 			for (int j=1; j<=3; j++){
 				System.out.print(driver.findElement(By.xpath(".//*[@id='customers']//tr["+i+"]//td["+j+"]")).getText()+"\t");
 			}
 			System.out.println();
-		}*/
+		}
         
         
 	}
