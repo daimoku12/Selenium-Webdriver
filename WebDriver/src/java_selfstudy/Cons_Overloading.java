@@ -3,9 +3,15 @@ package java_selfstudy;
 public class Cons_Overloading {
 
 int c;	
+
+public void testMethod(){
+	System.out.println("test method");
+}
 	
 Cons_Overloading(int a, int b){
-c = a+b;
+
+	this.testMethod();
+	c = a+b;
 System.out.println(c);
 }
 

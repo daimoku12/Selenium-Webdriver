@@ -34,7 +34,10 @@ public static void main(String[] args) {
 	Static_Practice obj2 = new Static_Practice();
 
 	obj1.j = 100;
+	obj2.j = 10;
+	
 	System.out.println(obj2.j);    //100
+	System.out.println(obj1.j+obj2.j); //20 very important
 	
 //	System.out.println(z);         //Error (Static method can only access Static members)
 	

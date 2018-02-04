@@ -15,12 +15,24 @@ public void add1(){ //try the output by changing this method name to 'add'
 	
 System.out.println(a+b);	
 }
+
+   ClassB(){
+	//super();
+	System.out.println("ClassB");
+}
+	
+  ClassB(int b){
+	System.out.println("param Class B");
+}
 	
 public static void main(String[] args) {
 		
 ClassB objB = new ClassB();
 System.out.println(objB.a);//100 (100 in this class is given preference over parent class)
 objB.add();//30
+objB.a = 100;
+
+
 
 //If Inheritance is not used, then create object of ClassA in ClassB to access the members of ClassA
 
