@@ -32,7 +32,7 @@ public class Telusko {
 		int j = 9;    //1001
 		
 		j=i<6?3:4; //if i<6, j=3 else j=4
-		System.out.println(j);
+		System.out.println(j);  //4
 		
 		//Bitwise operator
 		
