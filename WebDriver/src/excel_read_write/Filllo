@@ -1,0 +1,39 @@
+package excel_read_write;
+
+
+import com.codoid.products.exception.FilloException;
+import com.codoid.products.fillo.Connection;
+import com.codoid.products.fillo.Fillo;
+import com.codoid.products.fillo.Recordset;
+
+
+public class Filloo 
+{
+  public String getData(int rowNum, String colName) throws FilloException
+  {
+	    String query = "SELECT * FROM Sheet1 WHERE RowNum='"+rowNum+"'";
+		String filePath = "C:\\Users\\malik\\Desktop\\Test.xlsx";
+		
+		Fillo fillo = new Fillo();
+		Connection connection = fillo.getConnection(filePath);
+		Recordset recordset = connection.executeQuery(query);
+		
+		int numberOfRows = recordset.getCount();
+		
+		while (recordset.next()) 
+		{
+		  //System.out.println(recordset.getField("Name") + " " + recordset.getField("Address"));
+		  //recordset.close();
+		  connection.close();
+	    }
+		return recordset.getField(colName);  
+  }
+	
+	
+  public static void main(String[] args) throws FilloException
+  {	
+	  Filloo f = new Filloo();
+	  String data = f.getData(2,"Name");
+	  System.out.println(data);
+  }
+}
