@@ -1,0 +1,14 @@
+	@Test
+	public void computedStyle()
+	{
+		//driver.get("https://www.w3schools.com/bootstrap/bootstrap_dropdowns.asp");
+		//WebElement element = driver.findElement(By.xpath("//a[@class='w3-left w3-btn'][contains(text(), 'Previous')]"));
+		//System.out.println(element.getCssValue("background-color"));
+		
+	    driver.get("https://www.w3schools.com");
+	    WebElement el = driver.findElement(By.xpath("//a[text()='LEARN HTML']"));
+	    String contents = (String) ((JavascriptExecutor) driver)
+	            .executeScript("return window.getComputedStyle(arguments[0]).getPropertyValue('background-color');", el);
+	    System.out.println(contents);
+	    //driver.close();
+	}
