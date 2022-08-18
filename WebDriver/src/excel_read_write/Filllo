@@ -1,6 +1,5 @@
 package excel_read_write;
 
-
 import com.codoid.products.exception.FilloException;
 import com.codoid.products.fillo.Connection;
 import com.codoid.products.fillo.Fillo;
@@ -9,7 +8,7 @@ import com.codoid.products.fillo.Recordset;
 
 public class Filloo 
 {
-  public String getData(int rowNum, String colName) throws FilloException
+   public static String getData(int rowNum, String colName) throws FilloException
   {
 	    String query = "SELECT * FROM Sheet1 WHERE RowNum='"+rowNum+"'";
 		String filePath = "C:\\Users\\malik\\Desktop\\Test.xlsx";
@@ -18,7 +17,7 @@ public class Filloo
 		Connection connection = fillo.getConnection(filePath);
 		Recordset recordset = connection.executeQuery(query);
 		
-		int numberOfRows = recordset.getCount();
+		//int numberOfRows = recordset.getCount();
 		
 		while (recordset.next()) 
 		{
@@ -32,8 +31,8 @@ public class Filloo
 	
   public static void main(String[] args) throws FilloException
   {	
-	  Filloo f = new Filloo();
-	  String data = f.getData(2,"Name");
+	  String data = getData(2,"Address");
 	  System.out.println(data);
   }
 }
+
